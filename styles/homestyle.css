@@ -1,0 +1,272 @@
+﻿*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    background: #fff6ee;
+}
+
+.faq-item {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.faq-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffd5bf;
+    color: white;
+    border: #653e19 1px solid;
+    padding: 10px 15px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+    background-color: #feb47b;
+}
+
+header
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #ffc287;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Potta One", system-ui;
+}
+
+.name
+{
+    position: relative;
+    left: 10vh;
+    flex: 1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+}
+
+nav ul {
+    position: relative;
+    list-style: none;
+    right: 10vh;
+    display: flex;
+    gap: 10rem;
+    flex: 1;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+}
+
+header img
+{
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    width: 20%;
+}
+
+main
+{
+    margin-top: 15vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container
+{
+    background-color: #ffcc9d;
+    margin: 40px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+main > div
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.container div:nth-child(1)
+{
+    flex: 1;
+    text-align: center;
+    font-size: 50px;
+    align-content: center;
+}
+
+.container div:nth-child(2)
+{
+    flex: 1;
+    font-size: 30px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide div
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #653e19;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slide div span:nth-child(1)
+{
+    position: relative;
+    font-size: 60px;
+    color: #fff;
+    z-index: 9;
+}
+
+.slide div span:nth-child(2)
+{
+    position: relative;
+    font-size: 20px;
+    max-width: 60%;
+    color: #fff;
+    z-index: 9;
+}
+
+.slide:nth-child(1)
+{
+    background-image: url("../images/img1.jpeg");
+    background-size: cover;
+}
+
+.slide:nth-child(2)
+{
+    background-image: url("../images/img2.jpg");
+    background-size: cover;
+}
+
+.slide:nth-child(3)
+{
+    background-image: url("../images/img3.jpg");
+    background-size: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+footer
+{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb567;
+    flex-direction: column;
+}
+
+footer img
+{
+    width: 20%;
+    position: relative;
+    bottom: 50px;
+}
+
+.contacts
+{
+    position: relative;
+    bottom: 30px;
+    color: #653e19;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
